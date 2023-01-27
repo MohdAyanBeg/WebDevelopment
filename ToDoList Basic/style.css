@@ -1,0 +1,137 @@
+.contain{
+    max-width: 50%;
+    margin: auto;
+}
+.bg-list{
+    background-color: aquamarine;
+}
+
+.d-none{
+    display: none;
+}
+.filtered{
+    display: none !important;
+}
+.addTask{
+    font-size: 2rem;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.addT{
+    color: white;
+}
+.plus:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 52, 52);
+    outline: none;
+    border: none;
+    /* background: none; */
+
+}
+.bdy{
+    margin: 0 21rem;
+}
+.headi h1{
+    font-size: 9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+.tasks h3{
+    font-size: 7vw;
+}
+
+.todos li{
+    background: rgb(139, 249, 221);
+}
+.fs {
+    color: rgb(62, 43, 205);
+    font-size: 1.2rem;
+    text-align: left;
+    overflow-wrap: break-word;
+    max-width: 80%;
+}
+.delete{
+    color: rgb(62, 43, 205);
+    cursor: pointer;
+    min-width: 15%;
+
+}
+input[type=text]{
+    color: rgb(168, 168, 168);
+    border: none;
+    background: none;
+
+}
+.addBox{
+    /* border: 2px solid black; */
+    display: none;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4vh 3vw;
+    height: 200px;
+    box-shadow: 3px 4px 10px rgb(46, 46, 104);
+}
+.addBox p{
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+.addBox i{
+    /* height: fit-content;
+    width: fit-content; */
+    font-size: 25px;
+    color: white;
+    background: rgb(0, 0, 187);
+    padding: 6px 20px;
+    box-shadow: 2px 2px 5px blue;
+    
+}
+
+input[type=text]:focus{
+    color: white;
+    outline: none;
+    border: none;
+}
+.todos li{
+    /* justify-content: center; */
+    align-items: center;
+}
+@media only screen and (max-width:500px) {
+
+    .contain{
+        max-width:90%;
+        margin: auto;
+
+    }
+    .headi h1{
+        font-size: 13vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .tasks h3{
+        font-size: 10vw;
+        font-weight: bold;
+    }
+    .listout ul{
+        max-width: 95%;
+
+    }
+    .fs,.adder{
+        justify-content: left;
+        font-size: 1rem;
+    }
+    .io{
+        padding: 0.5vh !important;
+        max-height: 5vh !important;
+    }
+    .find, .adder{
+        max-width: 75%;
+        margin: auto;
+    }
+
+    .addTask{
+        font-size: 11vw;
+    }
+    
+}

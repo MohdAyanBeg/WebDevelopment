@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/affa686812.js" crossorigin="anonymous"></script>
+    <title>ToDo-List</title>
+</head>
+<body class="bg-primary">
+    <div class="contain text-center">
+    <div class="header py-4 px-2">
+        <header class="text-center headi text-normal mb-5 ">
+            <h1 class="text-light mb-5 lead">ToDo-List</h1>
+            <form action="#" class="find d-flex ">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg">
+                        <i class="fa-solid fa-magnifying-glass find"></i></span>
+                     </div> 
+                     <input type="text" name="search" class="form-control m-auto bg-dark io" id="sea" placeholder="Search Task" aria-label="Search">  
+                    <div class="input-group-append d-none">
+                        <span class="input-group-text clear"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                </div>
+                
+            </form>
+        </header>
+
+        <div class="tasks">
+            <h3 class="text-center display-4 text-light">Your Tasks</h3>
+        </div>
+        <div class="empty">
+            <div class="addBox">
+                <p>No Task To Do</p>
+                <label for="adding"><i class="fa-solid fa-file-circle-plus"></i></label>
+            </div>
+        </div>
+        
+    <div class="listout">
+        <ul class="list-group todos mx-auto my-3">
+            <li class="list-group-item d-flex justify-content-between align-item-center px-4 py-3 my-2 todosItem">
+                <span class="font-weight-bold fs">Make Maggie</span>
+                <span>
+                <i class="delete fa-solid fa-trash-can "></i>
+                </span>
+
+            </li>
+            <li class="list-group-item filtered d-flex justify-content-between align-item-center px-4 py-3 my-2 todosItem ">
+                <span class="font-weight-bold fs">Learn JavaScript</span>
+                <span>
+                <i class="delete fa-solid fa-trash-can "></i>
+                </span>
+
+            </li>
+            
+        </ul>
+    </div>
+
+        <form class="adder text-center my-4">
+            <label for="adding" class="addTask">Add a new Task</label>
+            <div class="input-group">
+                    <input type="text" class="form-control m-auto font-weight-bold bg-dark io" name="add" id="adding" placeholder="write here....">
+                    <div class="input-group-append">
+                    <span class="input-group-text plus">
+                    <i class="fa-solid fa-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
