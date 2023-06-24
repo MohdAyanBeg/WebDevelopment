@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+}
+.head{
+    text-align: center;
+    font-size: 1.7em;
+    background-color: orange;
+    font-family: cursive;
+}
+.clock{
+    /* border: 1px solid red; */
+    height: 30vw;
+    width: 30vw;
+    margin: 50px auto;
+    background: url(backgroundAnalog.png) center/cover no-repeat;
+    filter: invert(100%);
+    position: relative;
+}
+.hrs,.mins,.sec,.msec{
+    position: absolute;
+    transform-origin: bottom;
+    filter: invert(100%);
+    border-radius: 2px;
+    opacity: 0.7;
+}
+.hrs{
+    width: 2%;
+    max-width: 5px;
+    height: 22%;
+    top: 28%;
+    left: 49.4%;
+    background-color:rgb(4, 87, 255) ;
+    border: 1px solid black;
+    z-index: 3;
+    /* display: none; */
+}
+.mins{
+    width: 2%;
+    max-width: 5px;
+    height: 34%;
+    top: 16%;
+    left: 49.4%;
+    background-color:rgb(5, 242, 80) ;
+    border: 1px solid black;
+    z-index: 2;
+    /* display: none; */
+}
+.sec{
+    width: 0.2%;
+    max-width: 5px;
+    height: 43%;
+    top: 7%;
+    left: 49.4%;
+    border: 1px solid black;
+    background-color: rgb(245, 3, 3);
+    z-index: 1;
+    /* display: none; */
+}
+.msec{
+    width: 0.2%;
+    max-width: 5px;
+    height: 43%;
+    top: 7%;
+    left: 49.4%;
+    border: 1px solid black;
+    background-color: rgb(245, 3, 3);
+    z-index: 1;
+    /* display: none; */
+}
+.center{
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px auto; */
+}
+.dot{
+    border: 1px solid black;
+    filter: invert(100%);
+    border-radius: 5px;
+    z-index: 6;
+
+}
+.info{
+    /* border: 1px solid red; */
+}
+.info{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    color: #fffb00;
+
+}
+.convert{
+    text-align: center;
+    margin: 15px auto;
+}
+.convert button{
+    background: orange;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+@media (max-width:460px) {
+    
+    .dot{
+        border: 4px solid black;
+        border-radius: 5px;
+        z-index: 6;
+        opacity: 0.75;
+    
+    }
+    .head{
+        font-size: 1em;
+    }
+
+}
+@media (max-width:720px) {
+    
+    .clock{
+        /* border: 1px solid red; */
+        height: 50vw;
+        width: 50vw;
+        margin: 50px auto;
+        background: url(backgroundAnalog.png) center/cover no-repeat;
+        filter: invert(100%);
+        position: relative;
+    }
+    .center{
+        /* border: 1px solid rgb(0, 0, 0); */
+        height: 50vw;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 50px auto; */
+    }
+}
