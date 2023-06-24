@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(59, 57, 57);
+}
+.head h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    margin: 0 auto;
+    padding: 20px 20px;
+    font-size: 55px;
+    font-family: 'Unbound', cursive;
+}
+.screen{
+    /* border: 1px solid white; */
+    height: 30vh;
+    margin-bottom:10px ;
+
+}
+.ddmy{
+        /* border: 1px solid white; */
+        display: flex;
+        color: yellow;
+        margin: 9vh auto;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 0;
+        justify-content: space-around;
+        height: 50px;
+        max-width: 297px;
+        /* bottom: 0; */
+        font-family: cursive;
+        /* top: 10px; */
+        position: relative;
+}
+.ddmy :nth-child(n){
+    position: abolute;
+    bottom: 0;
+    
+
+}
+
+.clock{
+    /* border: 1px solid #ffffff; */
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    height: 120px;
+}
+.clock :nth-child(n){
+    /* border: 2px solid yellow; */
+    background: yellow;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Unbound', cursive;
+}
+.clocklabel{
+    /* border: 1px solid #ffffff; */
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    height: 34px;
+
+}
+.clocklabel :nth-child(n){
+    /* border: 2px solid yellow; */
+    background: rgb(0, 0, 0);
+    color: orange;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Unbound', cursive;
+}
+.change {
+    text-align: center;
+    margin: 15px auto;
+}
+.change button{
+    background: orange;
+    color: black;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+.convert{
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.convert h3{
+    color: white;
+
+}
+.choose{
+    /* border: 1px solid white; */
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dn{
+    display: none !important;
+}
+.c4{
+    width: 24.77% !important;
+}
+@media (max-width:370px){
+    .head h1{
+        font-size: 32px;
+    }
+    .clock{
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+    .clocklabel{
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+
+}
