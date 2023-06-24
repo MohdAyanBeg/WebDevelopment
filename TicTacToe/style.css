@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right ,rgb(228, 176, 216),rgb(186, 248, 255));
+}
+
+.head{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.head h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: cursive;
+}
+.head button{
+    align-items: center;
+    display: inline-block;
+    /* border: 1px solid red; */
+    border: none;
+    color: rgb(0, 81, 255);
+    background: rgb(43, 246, 185);
+    box-shadow: 2px 2px 5px blue;
+    font-family: cursive;
+    font-weight: bold;
+    background-blend-mode:exclusion ;
+    border-radius: 8px;
+    width: 80px;
+    font-size: 1.2em;
+    margin:25px 40%;
+}
+.winState{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    font-size: larger;
+    font-family: 'Old Standard TT', serif;
+    /* border: 1px solid black; */
+    /* display: none; */
+}
+.container{
+    /* border: 1px solid blue; */
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    margin-top: 2vh;
+    position: relative;
+}
+.boxes{
+    /* border: 1px solid yellow; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.box{
+    /* border: 1px solid red; */
+    width: 33.335%;
+    height: 33.33%;
+    font-size: 4em;
+    color: rgb(12, 172, 221);
+    font-family: 'Permanent Marker', cursive;
+    border-right: 4px solid rgb(255, 0, 0);
+    border-bottom: 4px solid rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes :nth-child(3n){
+    border-right: none;
+}
+.boxes :nth-child(7){
+    border-bottom: none;
+}
+.boxes :nth-child(8){
+    border-bottom: none;
+}
+.boxes :nth-child(9){
+    border-bottom: none;
+}
+
+.restart{
+    /* border: 1px solid; */
+    margin: 10px;
+    text-align: center;
+}
+.restart button{
+    align-items: center;
+    display: inline-block;
+    /* border: 1px solid red; */
+    border: none;
+    color: rgb(255, 8, 0);
+    background: rgb(253, 188, 90);
+    box-shadow: 2px 2px 5px rgb(255, 81, 0);
+    font-family: cursive;
+    font-weight: bold;
+    background-blend-mode:exclusion ;
+    border-radius: 8px;
+    width: 80px;
+    font-size: 1.2em;
+    margin:25px 40%;
+}
+.dn{
+    display: none;
+}
